@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `cssparser` crate.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, cssparser">
+
+    <title>cssparser - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <section class="sidebar">
+        
+        <p class='location'></p>
+    </section>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Crate <a class='mod' href=''>cssparser</a><wbr></span><span class='out-of-band'><a href='stability.html'>[stability]</a> <span id='render-detail'>
+            <a id="collapse-all" href="#">[-]
+            </a>&nbsp;<a id="expand-all" href="#">[+]</a>
+        </span><a id='src-0' href='../src/cssparser/home/travis/build/servo/rust-cssparser/src/lib.rs.html#5-37'>[src]</a></span></h1>
+<h2 id='reexports' class='section-header'><a href="#reexports">Reexports</a></h2>
+<table><tr><td><code>pub use color::{<a class='enum' href='../cssparser/enum.Color.html' title='cssparser::Color'>CurrentColor</a>, <a class='enum' href='../cssparser/enum.Color.html' title='cssparser::Color'>RGBAColor</a>};</code></td></tr></table><h2 id='modules' class='section-header'><a href="#modules">Modules</a></h2>
+<table>
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='mod' href='ast/index.html'
+                               title='cssparser::ast'>ast</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                </table><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DeclarationListParser.html'
+                               title='cssparser::DeclarationListParser'>DeclarationListParser</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.RGBA.html'
+                               title='cssparser::RGBA'>RGBA</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.RuleListParser.html'
+                               title='cssparser::RuleListParser'>RuleListParser</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.StylesheetParser.html'
+                               title='cssparser::StylesheetParser'>StylesheetParser</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Tokenizer.html'
+                               title='cssparser::Tokenizer'>Tokenizer</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                </table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table>
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='enum' href='enum.Color.html'
+                               title='cssparser::Color'>Color</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                </table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
+<table>
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.ToCss.html'
+                               title='cssparser::ToCss'>ToCss</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                </table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
+<table>
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.decode_stylesheet_bytes.html'
+                               title='cssparser::decode_stylesheet_bytes'>decode_stylesheet_bytes</a></td>
+                        <td class='docblock short'><p>Determine the character encoding of a CSS stylesheet and decode it.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.parse_declaration_list.html'
+                               title='cssparser::parse_declaration_list'>parse_declaration_list</a></td>
+                        <td class='docblock short'><p>Parse a list of declarations and at-rules,
+like @page in CSS 2.1, all declaration lists in level 3
+Return a <code>Iterator&lt;Result&lt;DeclarationListItem, SyntaxError&gt;&gt;</code></p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.parse_nth.html'
+                               title='cssparser::parse_nth'>parse_nth</a></td>
+                        <td class='docblock short'><p>Parse the <em>An+B</em> notation, as found in the <code>:nth-child()</code> selector.
+The input is typically the arguments of a function component value.
+Return <code>Ok((A, B))</code>, or <code>Err(())</code> for a syntax error.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.parse_one_component_value.html'
+                               title='cssparser::parse_one_component_value'>parse_one_component_value</a></td>
+                        <td class='docblock short'><p>Parse a single component value.
+Used eg. in attr(foo, color)</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.parse_one_declaration.html'
+                               title='cssparser::parse_one_declaration'>parse_one_declaration</a></td>
+                        <td class='docblock short'><p>Parse a single declaration (not an at-rule)
+Used eg. in @supports</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.parse_one_rule.html'
+                               title='cssparser::parse_one_rule'>parse_one_rule</a></td>
+                        <td class='docblock short'><p>Parse a single rule.
+Used eg. for CSSRuleList.insertRule()</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.parse_rule_list.html'
+                               title='cssparser::parse_rule_list'>parse_rule_list</a></td>
+                        <td class='docblock short'><p>Parse a non-top level list of rules eg. the content of an @media rule.
+Return a <code>Iterator&lt;Result&lt;Rule, SyntaxError&gt;&gt;</code></p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.parse_stylesheet_rules.html'
+                               title='cssparser::parse_stylesheet_rules'>parse_stylesheet_rules</a></td>
+                        <td class='docblock short'><p>Parse top-level of a CSS stylesheet.
+Return a <code>Iterator&lt;Result&lt;Rule, SyntaxError&gt;&gt;</code></p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.parse_stylesheet_rules_from_bytes.html'
+                               title='cssparser::parse_stylesheet_rules_from_bytes'>parse_stylesheet_rules_from_bytes</a></td>
+                        <td class='docblock short'><p>Parse stylesheet from bytes.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.serialize_identifier.html'
+                               title='cssparser::serialize_identifier'>serialize_identifier</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.serialize_string.html'
+                               title='cssparser::serialize_string'>serialize_string</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.tokenize.html'
+                               title='cssparser::tokenize'>tokenize</a></td>
+                        <td class='docblock short'><p>Returns a <code>Iterator&lt;(ComponentValue, SourceLocation)&gt;</code></p>
+</td>
+                    </tr>
+                </table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <div id="help" class="hidden">
+        <div class="shortcuts">
+            <h1>Keyboard shortcuts</h1>
+            <dl>
+                <dt>?</dt>
+                <dd>Show this help dialog</dd>
+                <dt>S</dt>
+                <dd>Focus the search field</dd>
+                <dt>&larrb;</dt>
+                <dd>Move up in search results</dd>
+                <dt>&rarrb;</dt>
+                <dd>Move down in search results</dd>
+                <dt>&#9166;</dt>
+                <dd>Go to active search result</dd>
+            </dl>
+        </div>
+        <div class="infos">
+            <h1>Search tricks</h1>
+            <p>
+                Prefix searches with a type followed by a colon (e.g.
+                <code>fn:</code>) to restrict the search to a given type.
+            </p>
+            <p>
+                Accepted types are: <code>fn</code>, <code>mod</code>,
+                <code>struct</code>, <code>enum</code>,
+                <code>trait</code>, <code>typedef</code> (or
+                <code>tdef</code>).
+            </p>
+        </div>
+    </div>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "cssparser";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script async src="../search-index.js"></script>
+</body>
+</html>

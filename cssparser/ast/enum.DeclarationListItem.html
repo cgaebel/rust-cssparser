@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `DeclarationListItem` enum in crate `cssparser`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, DeclarationListItem">
+
+    <title>cssparser::ast::DeclarationListItem - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <section class="sidebar">
+        
+        <p class='location'><a href='../index.html'>cssparser</a>::<wbr><a href='index.html'>ast</a></p><div class='block struct'><h2>Structs</h2><a class='struct ' href='struct.AtRule.html'>AtRule</a><a class='struct ' href='struct.Declaration.html'>Declaration</a><a class='struct ' href='struct.MoveSkipWhitespaceIterator.html'>MoveSkipWhitespaceIterator</a><a class='struct ' href='struct.NumericValue.html'>NumericValue</a><a class='struct ' href='struct.QualifiedRule.html'>QualifiedRule</a><a class='struct ' href='struct.SkipWhitespaceIterator.html'>SkipWhitespaceIterator</a><a class='struct ' href='struct.SourceLocation.html'>SourceLocation</a><a class='struct ' href='struct.SyntaxError.html'>SyntaxError</a></div><div class='block enum'><h2>Enums</h2><a class='enum ' href='enum.ComponentValue.html'>ComponentValue</a><a class='enum current' href='enum.DeclarationListItem.html'>DeclarationListItem</a><a class='enum ' href='enum.ErrorReason.html'>ErrorReason</a><a class='enum ' href='enum.Rule.html'>Rule</a></div><div class='block trait'><h2>Traits</h2><a class='trait ' href='trait.MoveSkipWhitespaceIterable.html'>MoveSkipWhitespaceIterable</a><a class='trait ' href='trait.SkipWhitespaceIterable.html'>SkipWhitespaceIterable</a></div>
+    </section>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content enum">
+<h1 class='fqn'><span class='in-band'>Enum <a href='../index.html'>cssparser</a>::<wbr><a href='index.html'>ast</a>::<wbr><a class='enum' href=''>DeclarationListItem</a><wbr></span><span class='out-of-band'><span id='render-detail'>
+            <a id="collapse-all" href="#">[-]
+            </a>&nbsp;<a id="expand-all" href="#">[+]</a>
+        </span><a id='src-1899' href='../../src/cssparser/home/travis/build/servo/rust-cssparser/src/ast.rs.html#109-113'>[src]</a></span></h1>
+<pre class='rust enum'>pub enum DeclarationListItem {
+    Declaration_(<a class='struct' href='../../cssparser/ast/struct.Declaration.html' title='cssparser::ast::Declaration'>Declaration</a>),
+    DeclAtRule(<a class='struct' href='../../cssparser/ast/struct.AtRule.html' title='cssparser::ast::AtRule'>AtRule</a>),
+}</pre><h2 class='variants'>Variants</h2>
+<table><tr><td id='variant.Declaration_'><a class='stability Unmarked' title='No stability level'></a><code>Declaration_</code></td><td></td></tr><tr><td id='variant.DeclAtRule'><a class='stability Unmarked' title='No stability level'></a><code>DeclAtRule</code></td><td></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html' title='core::cmp::PartialEq'>PartialEq</a> for <a class='enum' href='../../cssparser/ast/enum.DeclarationListItem.html' title='cssparser::ast::DeclarationListItem'>DeclarationListItem</a></code></h3><div class='impl-methods'><h4 id='method.eq' class='method'><a class='stability Unstable' title='Unstable: Definition may change slightly after trait reform'></a><code>fn <a href='#method.eq' class='fnname'>eq</a>(&amp;self, __arg_0: &amp;<a class='enum' href='../../cssparser/ast/enum.DeclarationListItem.html' title='cssparser::ast::DeclarationListItem'>DeclarationListItem</a>) -&gt; <a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
+<h4 id='method.ne' class='method'><a class='stability Unstable' title='Unstable: Definition may change slightly after trait reform'></a><code>fn <a href='#method.ne' class='fnname'>ne</a>(&amp;self, __arg_0: &amp;<a class='enum' href='../../cssparser/ast/enum.DeclarationListItem.html' title='cssparser::ast::DeclarationListItem'>DeclarationListItem</a>) -&gt; <a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
+</div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <div id="help" class="hidden">
+        <div class="shortcuts">
+            <h1>Keyboard shortcuts</h1>
+            <dl>
+                <dt>?</dt>
+                <dd>Show this help dialog</dd>
+                <dt>S</dt>
+                <dd>Focus the search field</dd>
+                <dt>&larrb;</dt>
+                <dd>Move up in search results</dd>
+                <dt>&rarrb;</dt>
+                <dd>Move down in search results</dd>
+                <dt>&#9166;</dt>
+                <dd>Go to active search result</dd>
+            </dl>
+        </div>
+        <div class="infos">
+            <h1>Search tricks</h1>
+            <p>
+                Prefix searches with a type followed by a colon (e.g.
+                <code>fn:</code>) to restrict the search to a given type.
+            </p>
+            <p>
+                Accepted types are: <code>fn</code>, <code>mod</code>,
+                <code>struct</code>, <code>enum</code>,
+                <code>trait</code>, <code>typedef</code> (or
+                <code>tdef</code>).
+            </p>
+        </div>
+    </div>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "cssparser";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script async src="../../search-index.js"></script>
+</body>
+</html>
